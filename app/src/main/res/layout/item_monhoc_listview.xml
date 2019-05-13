@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingBottom="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textviewHocKyMH"
+        android:background="#E4E4DE"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:text="1"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textviewMaMH"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:text="Mã môn học"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/textviewTenMH"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:text="Tên môn học"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+    <CheckBox
+        android:focusable="false"
+        android:button="@drawable/custom_checkbox"
+        android:id="@+id/checkboxMonHoc"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
